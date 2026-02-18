@@ -1,0 +1,55 @@
+# Training artifacts / large files
+.checkpoints/
+checkpoints/
+weights/
+models/
+
+
+# Datasets & downloads
+.data/
+data/
+dataset/
+datasets/
+archive.zip
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Python / virtual environments
+cyberEye/
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Jupyter / experimentation
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+*.ipynb
+
+# Logs, caches, temp files
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Personal folders / notes
+Maailings/
+notes/
+experiments/
+scratch/
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
