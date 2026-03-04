@@ -32,7 +32,7 @@ val_transform = transforms.Compose([
     transforms.Normalize([0.485,0.456,0.406],[0.229,0.224,0.225])
 ])
 
-def get_loaders(batch_size=32):
+def get_loaders(batch_size=16):
     train_ds = datasets.ImageFolder(TRAIN_PATH, transform=train_transform)  # ImageFolder = loads folder data (classes from subdirs; teach: Supervised = labeled data)
     val_ds = datasets.ImageFolder(VAL_PATH, transform=val_transform)
 

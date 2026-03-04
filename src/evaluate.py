@@ -9,8 +9,9 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 _, val_loader, _, classes = get_loaders()
 num_classes = len(classes)
-model = CNNBaseline(num_classes).to(device)
-model.load_state_dict(torch.load("cnn_final_model.pth"))  # Load = restore weights
+from src.model import HybridCNNViT
+model = HybridCNNViT(num_classes).to(device)
+model.load_state_dict(torch.load("best_model.pth")) # Load = restore weights
 model.eval()
 
 preds, trues = [], []
